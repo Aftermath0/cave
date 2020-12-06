@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/zebra_datepicker.min.css">
+    
+</head>
+<body>
+    <div class="block">
+            <form action="/mailer.php " method="POST">   
+
+                <div class="pt-3 pb-3 container">
+                    <div class="  rama d-flex container justify-content-center"> <img src="/Logo-Atomy.png" width="300" height="180" alt=""> </div>
+                    <div class=" container rama2 mt-3">
+                        <div class="row ">
+                            <div class="col mt-1">
+                                <h6 class="text-justify" >ФИО</h6>
+                                <div class="row">
+                                    <div class="col col-md-12"> <input name="name" type="text" class="form-control form-control-sm " placeholder="Введите ФИО"></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                            
+                    </div>
+                    
+                
+
+                    <div class=" container rama2 mt-3">
+                        <div class="row">
+                            <div class="col mt-1">
+                                <h6 class="text-justify"> Дата рождения</h6>
+                                <div class="row">
+                                    <div class="col col-md-12 datepicker checkin "> <input name="date" type="text" class=" form-control form-control-sm " readonly></div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                            
+                    </div>   
+                    <div class="container rama2 mt-3">
+                        <div class="row">
+                            <div class="col mt-1">
+                                <h6 class="text-justify"> Номер телефона</h6>
+                                <div class="row">
+                                    <div class="col col-md-12"> <input type="text" name="phone" class="form-control form-control-sm" required minlength="11" required maxlength="11" placeholder="+7"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                            
+                    </div>   
+                    <div class="container rama2 mt-3">
+                        <div class="row">
+                            <div class="col mt-1">
+                                <h6 class="text-justify">Адрес проживания</h6>
+                                <div class="row">
+                                    <div class="col col-md-12"> <input type="text" name="address" class="form-control form-control-sm" placeholder="полный адрес проживания/индекс"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                            
+                    </div>   
+                    <div class="container rama2 mt-3">
+                        <div class="row">
+                            <div class="col mt-1">
+                                <h6 class="text-justify">Электронная почта</h6>
+                                <div class="row">
+                                    <div class="col col-md-12"> <input type="text" name="email" class="form-control form-control-sm " placeholder="ivan.ivanov@mail.ru"></div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                            
+                    </div>   
+                    <div class="container rama  mt-3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <h6 class="text-justify">Цель регистрации на сайте</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <div class="mt-2 form-check">
+                                        <input class="form-check-input" name="customer" type="checkbox" value="1" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                        хочу приобрести продукцию по цене производителя без накруток
+                                        </label>
+                                    </div>
+                                
+                                    
+                                
+                                
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12"> 
+                                    <div class="mt-2 form-check">
+                                        <input class="form-check-input" name="partner" type="checkbox" value="1" id="defaultCheck1">
+                                        <label class=" form-check-label" for="defaultCheck1">
+                                        хочу быть потребителем и строить бизнес
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12"> 
+                                    <div class=" mt-2 form-check">
+                                        <input class="form-check-input" name="other" type="checkbox" value="1" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                        другое
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>    
+                            
+                    </div>
+                    <div class="mt-3 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary btn-lg ">Присоединиться </button>
+                    </div> 
+                </div>    
+            </form> 
+        
+        
+            
+        </div>
+
+    </div>    
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="path/to/jquery-3.5.0.js"><\/script>')</script>
+    <script src="/zebra_datepicker.min.js"></script>
+    <script src="/js/js.js"></script>
+   <script src="/js/bootstrap.min.js"></script> 
+   <scrip src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></scrip>
+   <scrip src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></scrip>
+</body>
+</html>
